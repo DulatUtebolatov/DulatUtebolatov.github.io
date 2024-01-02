@@ -30,7 +30,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Этот вкусссс.. Клубники.. приятного аппетита!");
+		tg.MainButton.setText("Берегись! Это самый вкусный гранат.. приятного аппетита!");
 		item = "2";
 		tg.MainButton.show();
 	}
