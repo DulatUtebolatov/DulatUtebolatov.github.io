@@ -19,7 +19,7 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Мммммм.. Латте Ананас! превосходный выбор!!");
+		tg.MainButton.setText("Мммм.. Латте Ананас! превосходный выбор!!");
 		item = "1";
 		tg.MainButton.show();
 	}
