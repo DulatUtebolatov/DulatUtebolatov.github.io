@@ -21,7 +21,7 @@ btn1.addEventListener("click", function(){
 	}
 	else {
                 result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -33,7 +33,7 @@ btn2.addEventListener("click", function(){
 	}
 	else {
 		result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "2";
 		tg.MainButton.show();
 	}
@@ -45,7 +45,7 @@ btn3.addEventListener("click", function(){
 	}
 	else {
 		result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "3";
 		tg.MainButton.show();
 	}
@@ -57,7 +57,7 @@ btn4.addEventListener("click", function(){
 	}
 	else {
 		result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "4";
 		tg.MainButton.show();
 	}
@@ -69,7 +69,7 @@ btn5.addEventListener("click", function(){
 	}
 	else {
 		result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "5";
 		tg.MainButton.show();
 	}
@@ -81,7 +81,7 @@ btn6.addEventListener("click", function(){
 	}
 	else {
 		result = result + 990;
-		tg.MainButton.setText("Итог:" && result);
+		tg.MainButton.setText("Итог:" + result + "тг");
 		item = "6";
 		tg.MainButton.show();
 	}
