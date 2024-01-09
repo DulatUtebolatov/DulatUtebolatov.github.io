@@ -1,8 +1,8 @@
-﻿let tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = '#FFFFFF';
+tg.MainButton.textColor = '#a2e6fc';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
@@ -13,13 +13,15 @@ let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
+let result = null;
 
 btn1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Мммм.. Латте Ананас! превосходный выбор!!");
+                result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -30,7 +32,8 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Берегись! Это самый вкусный гранат.. приятного аппетита!");
+		result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "2";
 		tg.MainButton.show();
 	}
@@ -41,7 +44,8 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Для вас мы сморозили смородину! Уаррарра!!");
+		result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "3";
 		tg.MainButton.show();
 	}
@@ -52,7 +56,8 @@ btn4.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Ахххх, мы пошли в лавандовый городок! Будем скорро!!");
+		result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "4";
 		tg.MainButton.show();
 	}
@@ -63,7 +68,8 @@ btn5.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Дайте угадаю.... у вас есть прекрасный вкус!");
+		result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "5";
 		tg.MainButton.show();
 	}
@@ -74,7 +80,8 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Анананананаса много не бывает!");
+		result = result + 990;
+		tg.MainButton.setText("Итог:" && result);
 		item = "6";
 		tg.MainButton.show();
 	}
