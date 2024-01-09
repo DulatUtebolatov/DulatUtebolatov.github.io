@@ -16,72 +16,72 @@ let btn6 = document.getElementById("btn6");
 let result = null;
 
 btn1.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+        result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-                result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "1";
 		tg.MainButton.show();
 	}
 });
 
 btn2.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+	result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-		result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "2";
 		tg.MainButton.show();
 	}
 });
 
 btn3.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+        result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-		result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "3";
 		tg.MainButton.show();
 	}
 });
 
 btn4.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+        result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-		result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "4";
 		tg.MainButton.show();
 	}
 });
 
 btn5.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+        result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-		result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "5";
 		tg.MainButton.show();
 	}
 });
 
 btn6.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
+        result = result + 990;
+	if (result==0) {
 		tg.MainButton.hide();
 	}
 	else {
-		result = result + 990;
-		tg.MainButton.setText('(ОПЛАТИТЬ)Итог: ${result} тг');
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "6";
 		tg.MainButton.show();
 	}
