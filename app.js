@@ -24,7 +24,6 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 		item = "1";
 		tg.MainButton.show();
-		btn1.hide();
 	}
 });
 
