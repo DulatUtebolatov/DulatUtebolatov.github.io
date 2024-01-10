@@ -217,7 +217,7 @@ dtn5.addEventListener("click", function(){
         val5 = val5 - 1;
 	if (result==0 && val5==0) {
 		tg.MainButton.hide();
-                dtn1.style.visibility = "hidden";
+                dtn5.style.visibility = "hidden";
 	}
         else if (result>0 && val5==0) {
                 tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
