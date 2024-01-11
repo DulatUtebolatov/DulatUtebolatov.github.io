@@ -409,7 +409,7 @@ dtn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData("Order: " + result.toString());
 });
 
 
