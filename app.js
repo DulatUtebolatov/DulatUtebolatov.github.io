@@ -409,8 +409,8 @@ dtn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(result.toString());
-	tg.sendData(result.toString());
+	tg.sendData("First inform" + result.toString());
+	tg.sendData("Second inform" + result.toString());
 });
 
 
