@@ -7,7 +7,6 @@ tg.MainButton.color = '#2cab37';
 
 let item = "";
 
-//let MainButton = Telegram.WebApp.MainButton;
 let glow1 = document.getElementById("glow1");
 let glow2 = document.getElementById("glow2");
 let glow3 = document.getElementById("glow3");
@@ -410,7 +409,7 @@ dtn6.addEventListener("click", function(){
 });
 
 let finorder = "";
-tg.MainButton.addEventListener("click", function(){
+Telegram.WebApp.addEventListener("mainButtonClicked", function(){
 //Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	window.location.href = 'BlankAdress.html';
