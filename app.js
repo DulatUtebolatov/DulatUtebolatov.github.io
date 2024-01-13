@@ -62,6 +62,7 @@ dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
 btn1.addEventListener("click", function(){
+        window.location.href = 'BlankAdress.html';
         result = result + 990;
         val1 = val1 + 1;
 	if (result==0 && val1==0) {
@@ -408,14 +409,9 @@ dtn6.addEventListener("click", function(){
 });
 
 let finorder = "";
-//let firstPage = document.getElementById('page01');
-//let secondPage = document.getElementById('page02');
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	btn6.style.visibility = "hidden";
-	//firstPage.style.display='none'; 
-        //secondPage.style.display='block';
-	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
+	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
 
@@ -428,14 +424,4 @@ p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
 
 usercard.appendChild(p);
-
-
-
-
-
-
-
-
-
-
 
