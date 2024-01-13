@@ -409,7 +409,9 @@ dtn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
+	document.getElementById('page01').style.display='none'; 
+        document.getElementById('page02').style.display='block';
+	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 });
 
 
