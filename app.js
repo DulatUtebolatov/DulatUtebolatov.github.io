@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#a2e6fc';
 tg.MainButton.color = '#2cab37';
 
-var MainButton = WebApp.MainButton;
+var MainButton = Telegram.WebApp.MainButton;
 let item = "";
 
 let glow1 = document.getElementById("glow1");
@@ -410,9 +410,8 @@ dtn6.addEventListener("click", function(){
 });
 
 let finorder = "";
-
+MainButton.addEventListener("click", function(){
 //Telegram.WebApp.onEvent("mainButtonClicked", function(){
-MainButton.onClick(function() {
 	window.location.href = 'BlankAdress.html';
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
