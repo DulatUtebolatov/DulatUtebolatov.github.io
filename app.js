@@ -413,8 +413,8 @@ let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	btn6.style.visibility = "hidden";
-	firstPage.style.display='none'; 
-        secondPage.style.display='block';
+	//firstPage.style.display='none'; 
+        //secondPage.style.display='block';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
