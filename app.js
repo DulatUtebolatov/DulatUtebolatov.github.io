@@ -62,7 +62,6 @@ dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
 btn1.addEventListener("click", function(){
-        window.location.href = 'BlankAdress.html';
         result = result + 990;
         val1 = val1 + 1;
 	if (result==0 && val1==0) {
