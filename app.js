@@ -32,13 +32,19 @@ let gtn3 = document.getElementById("gtn3");
 let gtn4 = document.getElementById("gtn4");
 let gtn5 = document.getElementById("gtn5");
 let gtn6 = document.getElementById("gtn6");
-let result = null;
+let AgreeCN = document.getElementById("Agreebtn");
+let Priced = document.getElementById("orderPrice");
+let OrderList = document.getElementById("orderList");
+let backer = document.getElementById("Back");
+
+let result = 0;
 let val1 = 0;
 let val2 = 0;
 let val3 = 0;
 let val4 = 0;
 let val5 = 0;
 let val6 = 0;
+
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -61,9 +67,21 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
+backer.addEventListener("click", function(){
+
+        document.getElementById('page01').style.display='block'; 
+        document.getElementById('page02').style.display='none';
+
+});
+
 btn1.addEventListener("click", function(){
+        
         result = result + 990;
         val1 = val1 + 1;
+
+        OrderList.innerHTML = '<li>' +  "Латте Ананас X" + val1.toString() + '<li>' + "Латте Гранат X" + val2.toString();
+
+        Priced.innerHTML = "Ваш заказ: " + result.toString() + "тг";
 	if (result==0 && val1==0) {
                 gtn1.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -294,8 +312,6 @@ dtn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
         result = result + 990;
         val5 = val5 + 1;
-	document.getElementById('page01').style.display='none'; 
-        document.getElementById('page02').style.display='block';
 	if (result==0 && val5==0) {
                 gtn5.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -409,11 +425,12 @@ dtn6.addEventListener("click", function(){
 	}
 });
 
+let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	document.getElementById('page01').style.display='none'; 
-        document.getElementById('page02').style.display='block';
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
+        document.getElementById('page01').style.display='none'; 
+        document.getElementById('page02').style.display='block';
 });
 
 
@@ -425,7 +442,6 @@ p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
 
 usercard.appendChild(p);
-
 
 
 
