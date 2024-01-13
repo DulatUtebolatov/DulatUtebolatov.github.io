@@ -32,6 +32,8 @@ let gtn3 = document.getElementById("gtn3");
 let gtn4 = document.getElementById("gtn4");
 let gtn5 = document.getElementById("gtn5");
 let gtn6 = document.getElementById("gtn6");
+let firstPage = document.getElementById("page01");
+let secondPage = document.getElementById("page02");
 let result = null;
 let val1 = 0;
 let val2 = 0;
@@ -410,7 +412,9 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';
+	btn6.style.visibility = "hidden";
+	firstPage.style.display='none'; 
+        secondPage.style.display='block';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
