@@ -294,6 +294,8 @@ dtn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
         result = result + 990;
         val5 = val5 + 1;
+	document.getElementById('page01').style.display='none'; 
+        document.getElementById('page02').style.display='block';
 	if (result==0 && val5==0) {
                 gtn5.style.visibility = "hidden";
 		tg.MainButton.hide();
