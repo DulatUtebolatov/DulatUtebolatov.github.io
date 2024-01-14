@@ -237,7 +237,6 @@ dtn3.addEventListener("click", function(){
 });
 
 btn4.addEventListener("click", function(){
-	bet = 1;
         result = result + 990;
         val4 = val4 + 1;
 	if (result==0 && val4==0) {
