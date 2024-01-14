@@ -13,6 +13,8 @@ let glow3 = document.getElementById("glow3");
 let glow4 = document.getElementById("glow4");
 let glow5 = document.getElementById("glow5");
 let glow6 = document.getElementById("glow6");
+let PageOne = document.getElementById("page01");
+let PageTwo = document.getElementById("page02");
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -422,9 +424,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 let timer = setInterval(function() {
   if(bet==1) {
-	  document.getElementById('page01').style.display='none'; 
-	  document.getElementById('page02').style.display='block';
 	  tg.MainButton.hide();
+	  PageOne.style.display='none'; 
+	  PageTwo.style.display='block';
   }
 	else {
 		
