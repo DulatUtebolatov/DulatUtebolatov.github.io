@@ -13,8 +13,8 @@ let glow3 = document.getElementById("glow3");
 let glow4 = document.getElementById("glow4");
 let glow5 = document.getElementById("glow5");
 let glow6 = document.getElementById("glow6");
-let PageOne = document.getElementById("page01");
-let PageTwo = document.getElementById("page02");
+let pg1 = document.getElementById("page01");
+let pg2 = document.getElementById("page02");
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -63,17 +63,6 @@ dtn3.style.visibility = "hidden";
 dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
-
-let fimer = setInterval(function() {
-  if(bet==1) {
-	  tg.MainButton.hide();
-	  PageOne.style.display='none'; 
-	  PageTwo.style.display='block';
-  }
-	else {
-		
-	}
-}, 20);
 
 btn1.addEventListener("click", function(){
        
@@ -435,8 +424,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 let timer = setInterval(function() {
   if(bet==1) {
 	  tg.MainButton.hide();
-	  PageOne.style.display='none'; 
-	  PageTwo.style.display='block';
+	  pg1.style.display='none'; 
+	  pg2.style.display='block';
   }
 	else {
 		
