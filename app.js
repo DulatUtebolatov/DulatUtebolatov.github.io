@@ -62,14 +62,6 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
-let timer = setInterval(function() {
-  if(bet==1) {
-	  window.location.href = 'BlankAdress.html';
-  }
-	else {
-		
-	}
-}, 20);
 
 btn1.addEventListener("click", function(){
        
@@ -429,6 +421,14 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 });
 
+let timer = setInterval(function() {
+  if(bet==1) {
+	  window.location.href = 'BlankAdress.html';
+  }
+	else {
+		
+	}
+}, 20);
 
 let usercard = document.getElementById("usercard");
 
