@@ -62,14 +62,14 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
-for (let i = 0; i <0; i++) { // выведет 0, затем 1, затем 2
+let timer = setInterval(function() {
   if(bet==1) {
 	  window.location.href = 'BlankAdress.html';
   }
 	else {
 		
 	}
-}
+}, 20);
 
 btn1.addEventListener("click", function(){
        
