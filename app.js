@@ -39,6 +39,7 @@ let val3 = 0;
 let val4 = 0;
 let val5 = 0;
 let val6 = 0;
+let bet = 0;
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -60,6 +61,15 @@ dtn3.style.visibility = "hidden";
 dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
+
+for (let i = 0; i <0; i++) { // выведет 0, затем 1, затем 2
+  if(bet==1) {
+	  window.location.href = 'BlankAdress.html';
+  }
+	else {
+		
+	}
+}
 
 btn1.addEventListener("click", function(){
        
@@ -411,7 +421,7 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 //Telegram.WebApp.addEventListener("mainButtonClicked", function(){
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	val1 = val1+1;
+	bet = 1;
 	//Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	//window.location.href = 'BlankAdress.html';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
