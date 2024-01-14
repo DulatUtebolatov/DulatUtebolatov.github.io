@@ -13,9 +13,6 @@ let glow3 = document.getElementById("glow3");
 let glow4 = document.getElementById("glow4");
 let glow5 = document.getElementById("glow5");
 let glow6 = document.getElementById("glow6");
-let pg1 = document.getElementById("page01");
-let pg2 = document.getElementById("page02");
-
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -42,8 +39,6 @@ let val4 = 0;
 let val5 = 0;
 let val6 = 0;
 let bet = 0;
-
-pg2.style.display='none';
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -358,8 +353,6 @@ dtn5.addEventListener("click", function(){
 btn6.addEventListener("click", function(){
         result = result + 990;
         val6 = val6 + 1;
-	pg1.style.display='none';
-	pg2.style.display='block';
 	if (result==0 && val6==0) {
                 gtn6.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -419,8 +412,6 @@ let finorder = "";
 //Telegram.WebApp.onclick = function() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	bet = 1;
-	pg1.style.display='none';
-	pg2.style.display='block';
 	//Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	//window.location.href = 'BlankAdress.html';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
@@ -430,8 +421,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 let timer = setInterval(function() {
   if(bet==1) {
 	  tg.MainButton.hide();
-	  pg1.style.display='none';
-	  pg2.style.display='block';
   }
 	else {
 		
