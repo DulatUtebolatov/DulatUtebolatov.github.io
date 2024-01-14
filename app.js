@@ -64,6 +64,16 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
+let fimer = setInterval(function() {
+  if(bet==1) {
+	  tg.MainButton.hide();
+	  PageOne.style.display='none'; 
+	  PageTwo.style.display='block';
+  }
+	else {
+		
+	}
+}, 20);
 
 btn1.addEventListener("click", function(){
        
