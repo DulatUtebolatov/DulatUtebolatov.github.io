@@ -419,6 +419,8 @@ let finorder = "";
 //Telegram.WebApp.onclick = function() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	bet = 1;
+	pg1.style.display='none';
+	pg2.style.display='block';
 	//Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	//window.location.href = 'BlankAdress.html';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
