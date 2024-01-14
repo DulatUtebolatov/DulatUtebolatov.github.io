@@ -417,7 +417,35 @@ let finorder = "";
 //Telegram.WebApp.onclick = function() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	bet = 1;
-	Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
+	btn4.addEventListener("click", function(){
+        result = result + 990;
+        val4 = val4 + 1;
+	if (result==0 && val4==0) {
+                gtn4.style.visibility = "hidden";
+		tg.MainButton.hide();
+                dtn4.style.visibility = "hidden";
+                dtn4.innerHTML = "Тебе Нельзя";
+                btn4.innerHTML = "990тг";
+	}
+        else if (result>0 && val4==0) {
+                gtn4.style.visibility = "hidden";
+                tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
+                dtn4.style.visibility = "hidden";
+                dtn4.innerHTML = "Тебе Нельзя";
+                btn4.innerHTML = "990тг";
+	}
+	else {
+		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
+		item = "4";
+                dtn4.style.visibility = "visible";
+                gtn4.style.visibility = "visible";
+                gtn4.innerHTML = val4.toString();
+                dtn4.innerHTML = "-";
+		tg.MainButton.show();
+                btn4.innerHTML = "+";
+	}
+});
+	//Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	//window.location.href = 'BlankAdress.html';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
