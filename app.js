@@ -424,8 +424,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 let timer = setInterval(function() {
   if(bet==1) {
 	  tg.MainButton.hide();
-	  //pg1.style.display="none"; 
-	  //pg2.style.display="block";
   }
 	else {
 		
