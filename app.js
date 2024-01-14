@@ -422,7 +422,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 let timer = setInterval(function() {
   if(bet==1) {
-	  window.location.href = 'BlankAdress.html';
+	  document.getElementById('page01').style.display='none'; 
+	  document.getElementById('page02').style.display='block';
 	  tg.MainButton.hide();
   }
 	else {
