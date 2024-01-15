@@ -352,6 +352,7 @@ dtn5.addEventListener("click", function(){
 btn6.addEventListener("click", function(){
         result = result + 990;
         val6 = val6 + 1;
+	window.location.href = 'BlankAdress.html';
 	if (result==0 && val6==0) {
                 gtn6.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -410,9 +411,9 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	window.location.href = 'BlankAdress.html';
+	
 	btn1.style.display = "none";
-	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
+	
         
 });
 
