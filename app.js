@@ -61,6 +61,15 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
+let timer = setInterval(function() {
+  if(bet==1) {
+	  tg.MainButton.hide();
+  }
+	else {
+		
+	}
+}, 20);
+
 btn1.addEventListener("click", function(){
        
         result = result + 990;
@@ -416,15 +425,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
-
-let timer = setInterval(function() {
-  if(bet==1) {
-	  tg.MainButton.hide();
-  }
-	else {
-		
-	}
-}, 20);
 
 let usercard = document.getElementById("usercard");
 
