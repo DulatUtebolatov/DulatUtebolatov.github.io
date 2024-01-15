@@ -379,7 +379,7 @@ btn6.addEventListener("click", function(){
 	}
 });
 
-/*dtn6*/ tg.MainButton.addEventListener("click", function(){
+dtn6.addEventListener("click", function(){
         result = result - 990;
         val6 = val6 - 1;
 	if (result==0 && val6==0) {
