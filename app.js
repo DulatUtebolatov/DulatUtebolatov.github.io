@@ -6,7 +6,7 @@ tg.MainButton.textColor = '#a2e6fc';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
-
+let pageone = document.getElementById("pageone");
 let glow1 = document.getElementById("glow1");
 let glow2 = document.getElementById("glow2");
 let glow3 = document.getElementById("glow3");
@@ -294,6 +294,7 @@ dtn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
         result = result + 990;
         val5 = val5 + 1;
+	window.location.href = 'BlankAdress.html';
 	if (result==0 && val5==0) {
                 gtn5.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -352,7 +353,6 @@ dtn5.addEventListener("click", function(){
 btn6.addEventListener("click", function(){
         result = result + 990;
         val6 = val6 + 1;
-	window.location.href = 'BlankAdress.html';
 	if (result==0 && val6==0) {
                 gtn6.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -412,7 +412,7 @@ let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	
-	btn1.style.display = "none";
+	pageone.style.display = "none";
 	
         
 });
