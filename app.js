@@ -39,9 +39,6 @@ let val3 = 0;
 let val4 = 0;
 let val5 = 0;
 let val6 = 0;
-let bet = 0;
-document.getElementById('page01').style.display='block'; 
-document.getElementById('page02').style.display='none';
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -67,8 +64,6 @@ dtn6.style.visibility = "hidden";
 btn1.addEventListener("click", function(){
         result = result + 990;
         val1 = val1 + 1;
-        document.getElementById('page01').style.display='none'; 
-        document.getElementById('page02').style.display='block';
 	if (result==0 && val1==0) {
                 gtn1.style.visibility = "hidden";
 		tg.MainButton.hide();
@@ -415,17 +410,11 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	bet =1;
 	window.location.href = 'BlankAdress.html';
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
 
-let timer = setInterval(function() {
-if(bet == 1){
-	window.location.href = 'BlankAdress.html';
-}
-}, 20);
 
 let usercard = document.getElementById("usercard");
 
