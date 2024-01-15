@@ -7,6 +7,7 @@ tg.MainButton.color = '#2cab37';
 
 let item = "";
 let pageone = document.getElementById("pageone");
+let pagetwo = document.getElementById("pagetwo");
 let glow1 = document.getElementById("glow1");
 let glow2 = document.getElementById("glow2");
 let glow3 = document.getElementById("glow3");
@@ -413,7 +414,7 @@ let finorder = "";
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	
 	pageone.style.display = "none";
-	
+	pagetwo.style.display = "block";
         
 });
 
