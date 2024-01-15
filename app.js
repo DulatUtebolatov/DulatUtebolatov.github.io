@@ -298,7 +298,6 @@ dtn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
         result = result + 990;
         val5 = val5 + 1;
-	window.location.href = 'BlankAdress.html';
 	if (result==0 && val5==0) {
                 gtn5.style.visibility = "hidden";
 		tg.MainButton.hide();
