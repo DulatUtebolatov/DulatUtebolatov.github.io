@@ -39,7 +39,7 @@ let val3 = 0;
 let val4 = 0;
 let val5 = 0;
 let val6 = 0;
-
+let bet = 0;
 document.getElementById('page01').style.display='block'; 
 document.getElementById('page02').style.display='none';
 
@@ -416,10 +416,16 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	bet =1;
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
 });
 
+let timer = setInterval(function() {
+if(bet == 1){
+	window.location.href = 'BlankAdress.html';
+}
+}, 20);
 
 let usercard = document.getElementById("usercard");
 
