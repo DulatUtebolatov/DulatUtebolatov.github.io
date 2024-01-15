@@ -62,6 +62,9 @@ dtn4.style.visibility = "hidden";
 dtn5.style.visibility = "hidden";
 dtn6.style.visibility = "hidden";
 
+pageone.style.display = "block";
+pagetwo.style.display = "none";
+
 btn1.addEventListener("click", function(){
         result = result + 990;
         val1 = val1 + 1;
@@ -354,6 +357,8 @@ dtn5.addEventListener("click", function(){
 btn6.addEventListener("click", function(){
         result = result + 990;
         val6 = val6 + 1;
+	pageone.style.display = "none";
+	pagetwo.style.display = "block";
 	if (result==0 && val6==0) {
                 gtn6.style.visibility = "hidden";
 		tg.MainButton.hide();
