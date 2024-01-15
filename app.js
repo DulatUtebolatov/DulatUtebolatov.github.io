@@ -33,6 +33,8 @@ let gtn3 = document.getElementById("gtn3");
 let gtn4 = document.getElementById("gtn4");
 let gtn5 = document.getElementById("gtn5");
 let gtn6 = document.getElementById("gtn6");
+let orderprice = document.getElementById("orderPrice");
+
 let result = null;
 let val1 = 0;
 let val2 = 0;
@@ -414,7 +416,7 @@ dtn6.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	
+	orderprice.innerHTML = "Ваш заказ на сумму: " + result.toString() + "тг";
 	pageone.style.display = "none";
 	pagetwo.style.display = "block";
         
