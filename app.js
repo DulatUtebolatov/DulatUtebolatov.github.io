@@ -409,7 +409,7 @@ dtn6.addEventListener("click", function(){
 
 let finorder = "";
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+Telegram.WebApp.addEventListener("mainButtonClicked", function(){
 	window.location.href = 'BlankAdress.html';
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
