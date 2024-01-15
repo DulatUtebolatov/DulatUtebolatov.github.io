@@ -417,18 +417,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 
 });
 
-let fimer = setInterval(function() {
-	btn6.innerHTML = "Fimer";
-  if(bet==1) {
-	  tg.MainButton.hide();
-	else {
-		
-	}
-	
-}, 20);
-
 let timer = setInterval(function() {
 	btn6.innerHTML = "Timer";
+	btn6.innerHTML = "Climer";
   if(bet==1) {
 	  tg.MainButton.hide();
 	else {
