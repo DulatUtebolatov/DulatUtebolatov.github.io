@@ -411,7 +411,7 @@ let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	window.location.href = 'BlankAdress.html';
-	btn6.style.display = "none";
+	btn1.style.display = "none";
 	tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
         
 });
