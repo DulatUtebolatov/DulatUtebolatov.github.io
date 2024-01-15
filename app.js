@@ -409,10 +409,9 @@ btn6.addEventListener("click", function(){
 });
 
 let finorder = "";
-//Telegram.WebApp.onclick = function() {
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	bet = 1;
-	//Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
+	Telegram.WebApp.showAlert("Salem" + Telegram.WebApp.WebAppUser.username.toString());
 	//window.location.href = 'BlankAdress.html';
 	//tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
 
