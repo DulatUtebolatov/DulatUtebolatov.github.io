@@ -33,6 +33,7 @@ let gtn3 = document.getElementById("gtn3");
 let gtn4 = document.getElementById("gtn4");
 let gtn5 = document.getElementById("gtn5");
 let gtn6 = document.getElementById("gtn6");
+let gbmbtn = document.getElementById("getBackMenu");
 let orderprice = document.getElementById("orderPrice");
 
 let result = null;
@@ -411,6 +412,11 @@ dtn6.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn6.innerHTML = "+";
 	}
+});
+
+gbmbtn.addEventListener("click", function(){
+	pageone.style.display = "block";
+	pagetwo.style.display = "none";
 });
 
 let finorder = "";
