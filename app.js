@@ -43,6 +43,7 @@ let val3 = 0;
 let val4 = 0;
 let val5 = 0;
 let val6 = 0;
+let masval = [0,0,0,0,0,0];
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -95,6 +96,7 @@ btn1.addEventListener("click", function(){
                 btn1.innerHTML = "+";
 		tg.MainButton.show();
 	}
+	masval[0] = val1;
 });
 
 dtn1.addEventListener("click", function(){
@@ -124,6 +126,7 @@ dtn1.addEventListener("click", function(){
                 btn1.innerHTML = "+";
 		tg.MainButton.show();
 	}
+	masval[0] = val1;
 });
 
 btn2.addEventListener("click", function(){
@@ -153,6 +156,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn2.innerHTML = "+";
 	}
+	masval[1] = val2;
 });
 dtn2.addEventListener("click", function(){
         result = result - 990;
@@ -181,6 +185,7 @@ dtn2.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn2.innerHTML = "+";
 	}
+	masval[1] = val2;
 });
 
 btn3.addEventListener("click", function(){
@@ -210,6 +215,7 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn3.innerHTML = "+";
 	}
+	masval[2] = val3;
 });
 dtn3.addEventListener("click", function(){
         result = result - 990;
@@ -238,6 +244,7 @@ dtn3.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn3.innerHTML = "+";
 	}
+	masval[2] = val3;
 });
 
 btn4.addEventListener("click", function(){
@@ -267,6 +274,7 @@ btn4.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn4.innerHTML = "+";
 	}
+	masval[3] = val4;
 });
 
 dtn4.addEventListener("click", function(){
@@ -296,6 +304,7 @@ dtn4.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn4.innerHTML = "+";
 	}
+	masval[3] = val4;
 });
 
 btn5.addEventListener("click", function(){
@@ -325,6 +334,7 @@ btn5.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn5.innerHTML = "+";
 	}
+	masval[4] = val5;
 });
 
 dtn5.addEventListener("click", function(){
@@ -354,6 +364,7 @@ dtn5.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn5.innerHTML = "+";
 	}
+	masval[4] = val5;
 });
 
 btn6.addEventListener("click", function(){
@@ -383,6 +394,7 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn6.innerHTML = "+";
 	}
+	masval[5] = val6;
 });
 
 dtn6.addEventListener("click", function(){
@@ -412,6 +424,7 @@ dtn6.addEventListener("click", function(){
 		tg.MainButton.show();
                 btn6.innerHTML = "+";
 	}
+	masval[5] = val6;
 });
 
 gbmbtn.addEventListener("click", function(){
