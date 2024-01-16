@@ -14,11 +14,25 @@ let glow3 = document.getElementById("glow3");
 let glow4 = document.getElementById("glow4");
 let glow5 = document.getElementById("glow5");
 let glow6 = document.getElementById("glow6");
+let quan1 = document.getElementById("quantity1");
+let quan2 = document.getElementById("quantity2");
+let quan3 = document.getElementById("quantity3");
+let quan4 = document.getElementById("quantity4");
+let quan5 = document.getElementById("quantity5");
+let quan6 = document.getElementById("quantity6");
 let orderlist1 = document.getElementById("orderList1");
 let listitem1 = document.getElementById("listItem1");
 listitem1.style.display = "none";
 let listitem2 = document.getElementById("listItem2");
 listitem2.style.display = "none";
+let listitem3 = document.getElementById("listItem3");
+listitem3.style.display = "none";
+let listitem4 = document.getElementById("listItem4");
+listitem4.style.display = "none";
+let listitem5 = document.getElementById("listItem5");
+listitem5.style.display = "none";
+let listitem6 = document.getElementById("listItem6");
+listitem6.style.display = "none";
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -83,6 +97,7 @@ btn1.addEventListener("click", function(){
                 dtn1.style.visibility = "hidden";
                 dtn1.innerHTML = "Тебе Нельзя";
                 btn1.innerHTML = "990тг";
+		listitem1.style.display = "none";
 	}
         else if (result>0 && val1==0) {
                 gtn1.style.visibility = "hidden";
@@ -90,6 +105,7 @@ btn1.addEventListener("click", function(){
                 dtn1.style.visibility = "hidden";
                 dtn1.innerHTML = "Тебе Нельзя";
                 btn1.innerHTML = "990тг";
+		listitem1.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -100,8 +116,9 @@ btn1.addEventListener("click", function(){
                 dtn1.innerHTML = "-";
                 btn1.innerHTML = "+";
 		tg.MainButton.show();
+		listitem1.style.display = "block";
 	}
-	masval[0] = val1;
+	quan1.innerHTML = "X" + val1.toString();
 });
 
 dtn1.addEventListener("click", function(){
@@ -113,6 +130,7 @@ dtn1.addEventListener("click", function(){
                 dtn1.style.visibility = "hidden";
                 dtn1.innerHTML = "Тебе Нельзя";
                 btn1.innerHTML = "990тг";
+		listitem1.style.display = "none";
 	}
         else if (result>0 && val1==0) {
                 gtn1.style.visibility = "hidden";
@@ -120,6 +138,7 @@ dtn1.addEventListener("click", function(){
                 dtn1.innerHTML = "Тебе Нельзя";
                 dtn1.style.visibility = "hidden";
                 btn1.innerHTML = "990тг";
+		listitem1.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -130,8 +149,9 @@ dtn1.addEventListener("click", function(){
                 dtn1.innerHTML = "-";
                 btn1.innerHTML = "+";
 		tg.MainButton.show();
+		listitem1.style.display = "block";
 	}
-	masval[0] = val1;
+	quan1.innerHTML = "X" + val1.toString();
 });
 
 btn2.addEventListener("click", function(){
@@ -143,6 +163,7 @@ btn2.addEventListener("click", function(){
                 dtn2.innerHTML = "Тебе Нельзя";
                 dtn2.style.visibility = "hidden";
                 btn2.innerHTML = "990тг";
+		listitem2.style.display = "none";
 	}
         else if (result>0 && val2==0) {
                 gtn2.style.visibility = "hidden";
@@ -150,6 +171,7 @@ btn2.addEventListener("click", function(){
                 dtn2.innerHTML = "Тебе Нельзя";
                 dtn2.style.visibility = "hidden";
                 btn2.innerHTML = "990тг";
+		listitem2.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -160,8 +182,9 @@ btn2.addEventListener("click", function(){
                 dtn2.innerHTML = "-";
 		tg.MainButton.show();
                 btn2.innerHTML = "+";
+		listitem2.style.display = "block";
 	}
-	masval[1] = val2;
+	quan2.innerHTML = "X" + val2.toString();
 });
 dtn2.addEventListener("click", function(){
         result = result - 990;
@@ -172,6 +195,7 @@ dtn2.addEventListener("click", function(){
 		tg.MainButton.hide();
                 dtn2.style.visibility = "hidden";
                 btn2.innerHTML = "990тг";
+		listitem2.style.display = "none";
 	}
         else if (result>0 && val2==0) {
                 gtn2.style.visibility = "hidden";
@@ -179,6 +203,7 @@ dtn2.addEventListener("click", function(){
                 tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
                 dtn2.style.visibility = "hidden";
                 btn2.innerHTML = "990тг";
+		listitem2.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -189,8 +214,9 @@ dtn2.addEventListener("click", function(){
                 dtn2.innerHTML = "-";
 		tg.MainButton.show();
                 btn2.innerHTML = "+";
+		listitem2.style.display = "block";
 	}
-	masval[1] = val2;
+	quan2.innerHTML = "X" + val2.toString();
 });
 
 btn3.addEventListener("click", function(){
@@ -202,6 +228,7 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
                 dtn3.style.visibility = "hidden";
                 btn3.innerHTML = "990тг";
+		listitem3.style.display = "none";
 	}
         else if (result>0 && val3==0) {
                 gtn3.style.visibility = "hidden";
@@ -209,6 +236,7 @@ btn3.addEventListener("click", function(){
                 tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
                 dtn3.style.visibility = "hidden";
                 btn3.innerHTML = "990тг";
+		listitem3.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -219,8 +247,9 @@ btn3.addEventListener("click", function(){
                 dtn3.innerHTML = "-";
 		tg.MainButton.show();
                 btn3.innerHTML = "+";
+		listitem3.style.display = "block";
 	}
-	masval[2] = val3;
+	quan3.innerHTML = "X" + val3.toString();
 });
 dtn3.addEventListener("click", function(){
         result = result - 990;
@@ -231,6 +260,7 @@ dtn3.addEventListener("click", function(){
 		tg.MainButton.hide();
                 dtn3.style.visibility = "hidden";
                 btn3.innerHTML = "990тг";
+		listitem3.style.display = "none";
 	}
         else if (result>0 && val3==0) {
                 gtn3.style.visibility = "hidden";
@@ -238,6 +268,7 @@ dtn3.addEventListener("click", function(){
                 tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
                 dtn3.style.visibility = "hidden";
                 btn3.innerHTML = "990тг";
+		listitem3.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -248,8 +279,9 @@ dtn3.addEventListener("click", function(){
                 dtn3.innerHTML = "-";
 		tg.MainButton.show();
                 btn3.innerHTML = "+";
+		listitem3.style.display = "block";
 	}
-	masval[2] = val3;
+	quan3.innerHTML = "X" + val3.toString();
 });
 
 btn4.addEventListener("click", function(){
@@ -261,6 +293,7 @@ btn4.addEventListener("click", function(){
                 dtn4.style.visibility = "hidden";
                 dtn4.innerHTML = "Тебе Нельзя";
                 btn4.innerHTML = "990тг";
+		listitem4.style.display = "none";
 	}
         else if (result>0 && val4==0) {
                 gtn4.style.visibility = "hidden";
@@ -268,6 +301,7 @@ btn4.addEventListener("click", function(){
                 dtn4.style.visibility = "hidden";
                 dtn4.innerHTML = "Тебе Нельзя";
                 btn4.innerHTML = "990тг";
+		listitem4.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -278,8 +312,9 @@ btn4.addEventListener("click", function(){
                 dtn4.innerHTML = "-";
 		tg.MainButton.show();
                 btn4.innerHTML = "+";
+		listitem4.style.display = "block";
 	}
-	masval[3] = val4;
+	quan4.innerHTML = "X" + val4.toString();
 });
 
 dtn4.addEventListener("click", function(){
@@ -291,6 +326,7 @@ dtn4.addEventListener("click", function(){
                 dtn4.style.visibility = "hidden";
                 dtn4.innerHTML = "Тебе Нельзя";
                 btn4.innerHTML = "990тг";
+		listitem4.style.display = "none";
 	}
         else if (result>0 && val4==0) {
                 gtn4.style.visibility = "hidden";
@@ -298,6 +334,7 @@ dtn4.addEventListener("click", function(){
                 dtn4.style.visibility = "hidden";
                 dtn4.innerHTML = "Тебе Нельзя";
                 btn4.innerHTML = "990тг";
+		listitem4.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -308,8 +345,9 @@ dtn4.addEventListener("click", function(){
                 dtn4.innerHTML = "-";
 		tg.MainButton.show();
                 btn4.innerHTML = "+";
+		listitem4.style.display = "block";
 	}
-	masval[3] = val4;
+	quan4.innerHTML = "X" + val4.toString();
 });
 
 btn5.addEventListener("click", function(){
@@ -321,6 +359,7 @@ btn5.addEventListener("click", function(){
                 dtn5.style.visibility = "hidden";
                 dtn5.innerHTML = "Тебе Нельзя";
                 btn5.innerHTML = "990тг";
+		listitem5.style.display = "none";
 	}
         else if (result>0 && val5==0) {
                 gtn5.style.visibility = "hidden";
@@ -328,6 +367,7 @@ btn5.addEventListener("click", function(){
                 dtn5.style.visibility = "hidden";
                 dtn5.innerHTML = "Тебе Нельзя";
                 btn5.innerHTML = "990тг";
+		listitem5.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -338,8 +378,9 @@ btn5.addEventListener("click", function(){
                 dtn5.innerHTML = "-";
 		tg.MainButton.show();
                 btn5.innerHTML = "+";
+		listitem5.style.display = "block";
 	}
-	masval[4] = val5;
+	quan5.innerHTML = "X" + val5.toString();
 });
 
 dtn5.addEventListener("click", function(){
@@ -351,6 +392,7 @@ dtn5.addEventListener("click", function(){
                 dtn5.style.visibility = "hidden";
                 dtn5.innerHTML = "Тебе Нельзя";
                 btn5.innerHTML = "990тг";
+		listitem5.style.display = "none";
 	}
         else if (result>0 && val5==0) {
                 gtn5.style.visibility = "hidden";
@@ -358,6 +400,7 @@ dtn5.addEventListener("click", function(){
                 dtn5.style.visibility = "hidden";
                 dtn5.innerHTML = "Тебе Нельзя";
                 btn5.innerHTML = "990тг";
+		listitem5.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -368,8 +411,9 @@ dtn5.addEventListener("click", function(){
                 dtn5.innerHTML = "-";
 		tg.MainButton.show();
                 btn5.innerHTML = "+";
+		listitem5.style.display = "block";
 	}
-	masval[4] = val5;
+	quan5.innerHTML = "X" + val5.toString();
 });
 
 btn6.addEventListener("click", function(){
@@ -381,6 +425,7 @@ btn6.addEventListener("click", function(){
                 dtn6.style.visibility = "hidden";
                 dtn6.innerHTML = "Тебе Нельзя";
                 btn6.innerHTML = "990тг";
+		listitem6.style.display = "none";
 	}
         else if (result>0 && val6==0) {
                 gtn6.style.visibility = "hidden";
@@ -388,6 +433,7 @@ btn6.addEventListener("click", function(){
                 dtn6.style.visibility = "hidden";
                 dtn6.innerHTML = "Тебе Нельзя";
                 btn6.innerHTML = "990тг";
+		listitem6.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -398,8 +444,9 @@ btn6.addEventListener("click", function(){
                 dtn6.innerHTML = "-";
 		tg.MainButton.show();
                 btn6.innerHTML = "+";
+		listitem6.style.display = "block";
 	}
-	masval[5] = val6;
+	quan6.innerHTML = "X" + val6.toString();
 });
 
 dtn6.addEventListener("click", function(){
@@ -411,6 +458,7 @@ dtn6.addEventListener("click", function(){
                 dtn6.style.visibility = "hidden";
                 dtn6.innerHTML = "Тебе Нельзя";
                 btn6.innerHTML = "990тг";
+		listitem6.style.display = "none";
 	}
         else if (result>0 && val6==0) {
                 gtn6.style.visibility = "hidden";
@@ -418,6 +466,7 @@ dtn6.addEventListener("click", function(){
                 dtn6.style.visibility = "hidden";
                 dtn6.innerHTML = "Тебе Нельзя";
                 btn6.innerHTML = "990тг";
+		listitem6.style.display = "none";
 	}
 	else {
 		tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
@@ -428,8 +477,9 @@ dtn6.addEventListener("click", function(){
                 dtn6.innerHTML = "-";
 		tg.MainButton.show();
                 btn6.innerHTML = "+";
+		listitem6.style.display = "block";
 	}
-	masval[5] = val6;
+	quan6.innerHTML = "X" + val6.toString();
 });
 
 gbmbtn.addEventListener("click", function(){
