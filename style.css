@@ -53,6 +53,7 @@ body {
 }
 .form-container .descriptionRed{
  color: #ff0011;
+ font-weight: bold;
  font-size: 20px;
  margin: 0 0 10px;
  display: block;
