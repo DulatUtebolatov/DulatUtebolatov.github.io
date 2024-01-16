@@ -12,7 +12,7 @@ body {
 	max-width: 300px;
 }
 .secpageorderlist {
-	padding: 10px 5px 5px 5px;
+	display:inline-block;
 }
 .form-container{
  color: var(--tg-theme-text-color);
