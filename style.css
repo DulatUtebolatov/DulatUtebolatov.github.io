@@ -51,6 +51,12 @@ body {
  margin: 0 0 10px;
  display: block;
 }
+.form-container .descriptionRed{
+ color: #ff0011;
+ font-size: 20px;
+ margin: 0 0 10px;
+ display: block;
+}
 .form-horizontal .form-group{ margin: 0 0 15px; }
 .form-horizontal .form-group:last-of-type{
  text-align: left;
@@ -133,7 +139,9 @@ body {
 .img {
 	width: 120px;
 }
-
+.minimg {
+	width: 40px;
+}
 .item {
 	text-align: center;
 }
