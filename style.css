@@ -11,7 +11,9 @@ body {
 .container {
 	max-width: 300px;
 }
-
+.secpageorderlist {
+	padding: 10px 5px 5px 5px;
+}
 .form-container{
  color: var(--tg-theme-text-color);
  background: var(--tg-theme-bg-color);
