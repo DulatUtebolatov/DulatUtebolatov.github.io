@@ -14,6 +14,11 @@ let glow3 = document.getElementById("glow3");
 let glow4 = document.getElementById("glow4");
 let glow5 = document.getElementById("glow5");
 let glow6 = document.getElementById("glow6");
+let orderlist1 = document.getElementById("orderList1");
+let listitem1 = document.getElementById("listItem1");
+listitem1.style.display = "none";
+let listitem2 = document.getElementById("listItem2");
+listitem2.style.display = "none";
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
