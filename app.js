@@ -489,6 +489,7 @@ gbmbtn.addEventListener("click", function(){
 	bet = 1;
 	pageone.style.display = "block";
 	pagetwo.style.display = "none";
+	tg.MainButton.setText("(ОПЛАТИТЬ)Итог:" + result.toString() + "тг");
 });
 
 let finorder = "";
@@ -499,13 +500,19 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	pageone.style.display = "none";
 	pagetwo.style.display = "block";
 	pagetree.style.display = "none";
-	tg.MainButton.setText("Подтвердить и оплатить");
+	tg.MainButton.setText("Подтвердить");
 	bet = 2;
 	}
-	else {
+	else if (bet == 2) {
 	pageone.style.display = "none";
 	pagetwo.style.display = "none";
 	pagetree.style.display = "block";
+	tg.MainButton.setText("Подтвердить и оплатить");
+	bet = 3;
+	}
+	else {
+		tg.sendData("[" + result.toString() + "," + val1.toString() + "," + val2.toString() + "," + val3.toString() + "," + val4.toString() + "," + val5.toString() + "," + val6.toString() + "]");
+		window.close()
 	}
 	
 });
