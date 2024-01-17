@@ -497,8 +497,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	if (bet == 1){
 	orderprice.innerHTML = "Ваш заказ на сумму: " + result.toString() + "тг";
 	pageone.style.display = "none";
-	pagetwo.style.display = "block";
-	pagetree.style.display = "none";
+	pagetwo.style.display = "none";
+	pagetree.style.display = "block";
 	tg.MainButton.setText("Подтвердить и оплатить");
 	bet = 2;
 	}
