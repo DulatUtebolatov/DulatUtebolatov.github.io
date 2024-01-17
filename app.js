@@ -8,6 +8,7 @@ tg.MainButton.color = '#2cab37';
 let item = "";
 let pageone = document.getElementById("pageone");
 let pagetwo = document.getElementById("pagetwo");
+let pagetree = document.getElementById("pagetwo");
 let glow1 = document.getElementById("glow1");
 let glow2 = document.getElementById("glow2");
 let glow3 = document.getElementById("glow3");
@@ -63,6 +64,7 @@ let val4 = 0;
 let val5 = 0;
 let val6 = 0;
 let masval = [0,0,0,0,0,0];
+let bet = 1;
 
 glow1.style.visibility = "hidden";
 glow2.style.visibility = "hidden";
@@ -87,6 +89,7 @@ dtn6.style.visibility = "hidden";
 
 pageone.style.display = "block";
 pagetwo.style.display = "none";
+pagetree.style.display = "none";
 
 btn1.addEventListener("click", function(){
         result = result + 990;
@@ -483,6 +486,7 @@ dtn6.addEventListener("click", function(){
 });
 
 gbmbtn.addEventListener("click", function(){
+	bet = 1;
 	pageone.style.display = "block";
 	pagetwo.style.display = "none";
 });
@@ -490,10 +494,19 @@ gbmbtn.addEventListener("click", function(){
 let finorder = "";
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	if (bet == 1){
 	orderprice.innerHTML = "Ваш заказ на сумму: " + result.toString() + "тг";
 	pageone.style.display = "none";
 	pagetwo.style.display = "block";
-        
+	pagetree.style.display = "none";
+	tg.MainButton.setText("Подтвердить и оплатить");
+	}
+	else {
+	pageone.style.display = "none";
+	pagetwo.style.display = "none";
+	pagetree.style.display = "block";
+	}
+	bet = 2;
 });
 
 
