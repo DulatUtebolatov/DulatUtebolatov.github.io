@@ -500,13 +500,14 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	pagetwo.style.display = "block";
 	pagetree.style.display = "none";
 	tg.MainButton.setText("Подтвердить и оплатить");
+	bet = 2;
 	}
 	else {
 	pageone.style.display = "none";
 	pagetwo.style.display = "none";
 	pagetree.style.display = "block";
 	}
-	bet = 2;
+	
 });
 
 
